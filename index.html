@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Evaluaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Consulta de Evaluaciones</h1>
+        </header>
+
+        <main>
+            <section class="formulario">            
+                <form id="formEvaluaciones">
+                <h2>Ingrese la información de la consulta de sus evaluaciones:</h2>
+
+                <div>
+                    <label for="courseName">Nombre del Curso:</label>
+                    <input type="text" id="courseName" name="courseName" required>    
+                </div>
+
+                <div class="input-group">
+                    <label for="fechaInicio">Fecha Inicio:</label>
+                    <input type="date" id="fechaInicio" name="fechaInicio" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="fechaFin">Fecha Fin:</label>
+                    <input type="date" id="fechaFin" name="fechaFin" required>
+                </div>
+
+                    <button type="submit">Consultar</button>
+                </form>
+                <div id="mensajeError" style="color: red;"></div>
+                <div id="mensajeCarga" style="color: rgb(0, 255, 13);"></div>
+
+            </section>
+
+            <section id="resultados">
+                <!-- Los resultados de la consulta se mostrarán aquí -->
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Consulta de Evaluaciones Assitanthellie.com by Johannes Talero</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
