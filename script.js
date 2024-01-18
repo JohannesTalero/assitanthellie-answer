@@ -1,3 +1,5 @@
+mostrarMensajeCarga(false);
+
 document.getElementById('formEvaluaciones').addEventListener('submit', function(e) {
     e.preventDefault();
 
